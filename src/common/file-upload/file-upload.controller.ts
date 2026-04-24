@@ -8,8 +8,8 @@ import {
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { FileType } from '@prisma/client';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
 import { FileUploadService } from './file-upload.service';
+import { JwtAuthGuard } from '../guards/jwt-auth.guard';
 
 @Controller('files')
 export class FileUploadController {
